@@ -1,12 +1,12 @@
 import { StyleSheet, View } from "react-native";
-import { ShoppingListItem } from "./components/ShoppingListItem";
+import { ShoppingListItem } from "../components/ShoppingListItem";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <ShoppingListItem name="Coffee" />
-      <ShoppingListItem name="Tea" />
-      <ShoppingListItem name="Milk" />
+      <ShoppingListItem name="Tea" isCompleted={true} />
+      <ShoppingListItem name="Milk" isCompleted />
     </View>
   );
 }
